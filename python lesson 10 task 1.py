@@ -3,14 +3,15 @@
 #
 # отработал команды с семинара
 
-
+import telebot
 from telegram import ReplyKeyboardMarkup, Bot, Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, ConversationHandler, CallbackContext
-from credits import bot_token
+from calculate import bot
+from calculate import bot_token
 
 
-bot = Bot(token=bot_token)
-updater = Updater(token=bot_token)
+bot = Bot(token=bot)
+updater = Updater(token=bot)
 dispatcher = updater.dispatcher
 
 GENDER = 0
